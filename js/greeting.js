@@ -27,7 +27,6 @@ const savedUsername = localStorage.getItem(INPUT_USERNAME);
 
 if (savedUsername === null) {
   loginForm.classList.remove(HIDDEN_CLASSNAME);
-  loginForm.classList.add("animate__animated", "animate__fadeInDown");
   greetings.classList.add("animate__animated", "animate__fadeInDown");
   loginForm.addEventListener("submit", loginSubmit);
 } else {

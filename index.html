@@ -17,7 +17,7 @@
             type="text" placeholder="What`s your name?" />
         <input class="hidden" type="submit" value="Log In" />
     </form>
-    <h2 id="clock" class="hidden">00:00</h2>
+    <h2 id="clock" class="hidden"></h2>
     <div id="weather" class="hidden">
         <div id="weather-info">
             <span></span>
@@ -25,9 +25,12 @@
         </div>
     </div>
     <h1 id="greeting" class="hidden"></h1>
-    <form id="todo-form" class="hidden">
-        <input id="todo-input" type="text" placeholder="Write a To Do and Press Enter" autocomplete="off" required />
-    </form>
+    <div id="todo-form-div">
+        <form id="todo-form" class="hidden">
+            <input id="todo-input" type="text" placeholder="Write a To Do and Press Enter" autocomplete="off"
+                required />
+        </form>
+    </div>
     <ul id="todo-list" class="hidden"></ul>
     <div id="quote" class="hidden">
         <span class="quote"></span>

@@ -12,14 +12,10 @@ function onGeo(position) {
     .then((data) => {
       const city = document.querySelector("#weather span:first-child");
       const weather = document.querySelector("#weather span:last-child");
-      city.innerText = data.name;
-      weather.innerText = `${data.weather[0].main} / ${Math.floor(
+      city.innerText = `${data.name} /`;
+      weather.innerText = `\u00A0${data.weather[0].main} / ${Math.floor(
         data.main.temp
       )}°C`;
-      const weatherIco = data.weather[0].icon;
-      const weatherAdrs = `http://openweathermap.org/img/wn/${weatherIco}@2x.png`;
-      img.src = weatherAdrs;
-      weathers.appendChild(img);
     });
 }
 
